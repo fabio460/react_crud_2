@@ -1,0 +1,115 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+ 
+}
+.App{
+  width: 80%;
+  margin: auto;
+  box-shadow: black 1px 2px 5px;
+  margin-top: 50px;
+  padding: 20px;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+table{
+  
+  width: 100%;
+}
+th{
+  background-color: yellowgreen;
+  width: 200px;
+}
+.botoes{
+  display: block;
+  
+}
+button{
+  cursor: pointer;
+}
+header button{
+  background-color: blue;
+  color: white;
+}
+td button{
+  display: inline;
+  
+}
+.model_escuro,.modal_atualizar_tela,.model_escuro_exibir{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(10, 10, 10,0.8);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.modal_excluir,.modal_atualizar,.modal_excluir_exibir{
+    position: fixed;
+    top:50px;
+    left: 0;
+    right: 0;
+    width: 70%;
+    height: 400px;
+    margin: auto;
+    box-shadow: black 1px 2px 5px;
+    background-color: white;
+    opacity: 1;
+    transition:1s;
+}
+.modal_escuro_visivel,.model_escuro_exibir_visivel{
+   display: flex;
+}
+
+.modal_atualizar_visivel{
+   display: flex;
+}
+.bloco_atualizar{
+  display: flex;
+  flex-direction: column;
+  padding: 10% 20%;
+}
+.input_1,.b1,.b2,.b3{
+  height: 30px;
+  padding: 0 5px;
+  margin: 2px;
+}
+.b1{
+  background-color: blue;
+  color: white;
+}
+.b2{
+  background-color: red;
+  color: white;
+}
+.b3{
+  background-color: yellow;
+  
+}
+img{
+  width: 50px;
+}
+@media (max-width:500px) {
+ td button{
+    width: 100%;
+    
+  }
+  .botoes{
+    display: block;
+    
+  }
+  .input_1,.b1,.b2,.b3{
+    height: 20px;
+    padding: 0 5px;
+    margin: 2px;
+  }
+}
