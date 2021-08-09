@@ -10,7 +10,8 @@ function TelaDeFormulario(){
     const dispatch =useDispatch();
     const [titulo,setTitulo]=useState('');
     const [descricao,setDescricao]=useState('');
-    useEffect(async ()=>{
+    
+    useEffect( async()=>{
         const l =await api.listar();
         setList(l);
     },[list]);
@@ -37,7 +38,9 @@ function TelaDeFormulario(){
            <th>Titulo</th>
            <th>Descrição</th>
            <th>Ação</th>
-           {list.map((item,key)=>{
+           {list.map((item)=>{
+               
+               
                return (
             <tr>
                 <td>{item.titulo}</td>

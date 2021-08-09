@@ -13,6 +13,7 @@ const initialState={
                 
                 };
              break;
+         default:    
      }
      return state;
  };
